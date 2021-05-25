@@ -1,63 +1,59 @@
-Title: readme-generator
-
-License: None
-
-## Table of Contents
-
-- [Description](#description)
-
-- [Installation](#installation)
-
-- [Usage](#usage)
-
-- [License](#license)
-
-- [Contributing](#contributing)
-
-- [Tests](#tests)
-
-- [Questions](#questions)
-
----
+## readme-generator
+  ![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)
 
 ## Description
 
-Generate high quality readmes based off user input.
+Conveniently create readmes for your GitHub repositories based off of user input.
 
----
+## Table of Contents
+
+* [Installation](#installation)
+
+* [Usage](#usage)
+
+* [License](#license)
+
+* [Contributing](#contributing)
+
+* [Tests](#tests)
+
+* [Questions](#questions)
+
+-------------------------------
 
 ## Installation
 
-To install, run npm i
+To install, unzip the repo, open the repo folder in VScode, open the terminal and enter "npm i" to install the required dependencies.
 
----
+-------------------------------
 
 ## Usage
 
-Save time by using this app to generate readmes for all your projects.
+To run this application, after following the installation instructions, enter "node index" in the terminal.
 
----
+-------------------------------
 
 ## License
 
-This application is covered under the None license.
+This project is licensed under the MIT license.
 
----
-
+-------------------------------
+  
 ## Contributing
 
-n/a
+To contribute to this project, please contact the author.
 
----
+-------------------------------
 
 ## Tests
 
-To test, run npm test
+n/a
 
----
+-------------------------------
 
 ## Questions
 
 My email: marlonbmatthew@gmail.com
 
 My GitHub: https://github.com/marlonmatthew/
+

@@ -1,30 +1,45 @@
-// function to generate markdown for README
-function generateMarkdown(data) {
-  return `Title: ${data.title}
+function renderLicenseBadge(license) {
+  if (license !== "None") {
+    return `![GitHub license](https://img.shields.io/badge/license-${license}-blue.svg)`;
+  }
+  return "";
+}
 
-License: ${data.license}
+function renderLicenseLink(license) {
+  if (license !== "None") {
+    return `\n* [License](#license)\n`;
+  }
+  return "";
+}
+
+function renderLicenseSection(license) {
+  if (license !== "None") {
+    return `## License
+
+This project is licensed under the ${license} license.`;
+  }
+  return "";
+}
+
+function generateMarkdown(data) {
+  return `## ${data.title}
+  ${renderLicenseBadge(data.license)}
+
+## Description
+
+${data.description}
 
 ## Table of Contents
-
-* [Description](#description)
 
 * [Installation](#installation)
 
 * [Usage](#usage)
-
-* [License](#license)
-
+${renderLicenseLink(data.license)}
 * [Contributing](#contributing)
 
 * [Tests](#tests)
 
 * [Questions](#questions)
-
--------------------------------
-
-## Description
-
-${data.description}
 
 -------------------------------
 
@@ -40,9 +55,7 @@ ${data.usageInfo}
 
 -------------------------------
 
-## License
-
-This application is covered under the ${data.license} license.
+${renderLicenseSection(data.license)}
 
 -------------------------------
   
